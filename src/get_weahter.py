@@ -17,7 +17,7 @@ f = open("weather_info.txt","w")
 city = city.replace("_", " ") 
 city = urllib.parse.quote(city)
 
-api_key = "0e8c8fdda3060d4965df9d83e84ed56e"
+api_key = "API Key here."
 try:
     xml_page = urlopen(f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&mode=xml&units=metric')
 except:
